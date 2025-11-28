@@ -13,10 +13,9 @@ jobs:
       uses: mamba-org/setup-micromamba@v1
       with:
         environment-name: sai
-        environment-file: build-env.yaml
+        environment-file: dev-env.yaml
     - name: Test with pytest
       run: |
-        micromamba run -n sai pip install -e .
         micromamba run -n sai pytest --cov=. --cov-report term-missing -vv
         micromamba run -n sai coverage xml
     - name: upload coverage report to codecov

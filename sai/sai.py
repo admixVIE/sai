@@ -27,6 +27,7 @@ from sai.generators import ChunkGenerator
 from sai.preprocessors import ChunkPreprocessor
 from sai.configs import GlobalConfig
 from sai.utils.utils import natsorted_df
+from sai.utils import UniqueKeyLoader
 
 
 def score(
@@ -63,7 +64,7 @@ def score(
     """
     try:
         with open(config, "r") as f:
-            config_dict = yaml.safe_load(f)
+            config_dict = yaml.load(f, Loader=UniqueKeyLoader)
     except FileNotFoundError:
         raise FileNotFoundError(f"Configuration file '{config}' not found.")
     except yaml.YAMLError as e:
