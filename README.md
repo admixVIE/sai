@@ -8,8 +8,11 @@
 
 A Python Package for **S**tatistics for **A**daptive **I**ntrogression
 
-The **OFFICIAL** repository: https://github.com/xin-huang/sai
+Main repository: https://github.com/xin-huang/sai
 
-Contributions, bug reports, and feature requests should be directed to [the official repository](https://github.com/xin-huang/sai). If you are viewing a fork, please note that it may diverge from upstream and is not maintained by the official maintainers. Please refer to **the official repository** for current releases, documentation, and contribution guidelines. When citing this software, cite **the official repository**, and use **official releases** for production or reproducible analyses.
+Please direct contributions, bug reports, and feature requests to the main repository. If you are viewing a fork, it may diverge from [the main repository](https://github.com/xin-huang/sai) and may not be kept up to date.
+
+For current releases, documentation, and contribution guidelines, please refer to the main repository. When citing this software, cite the main repository, and use tagged releases for production or reproducible analyses.
+
 
 The manual can be found [here](https://xin-huang.github.io/sai).
